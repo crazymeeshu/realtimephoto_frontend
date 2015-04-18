@@ -1,0 +1,37 @@
+<ion-view view-title="photo edit">
+	<ion-content>
+		<canvas id="c" style="border:1px solid black;" width="400" height="300"></canvas>
+			<div class="button-bar">
+				<a class="button button-dark" ng-click="isGray()">Enable Grayscale</a>
+				<a class="button button-dark" ng-click="notGray()">Disable Grayscale</a>
+			</div>
+		<p></p>
+			<div class="button-bar">
+				<a class="button button-stable" ng-click="isInvert()">Enable Invert</a>
+				<a class="button button-stable" ng-click="notInvert()">Disable Invert</a>
+			</div>
+		<p></p>
+			<div class="button-bar">
+				<a class="button button-positive" ng-click="isSepia()">Enable Sepia</a>
+				<a class="button button-positive" ng-click="notSepia()">Disable Sepia</a>
+			</div>
+		<p></p>
+			<div class="button-bar">
+				<a class="button button-calm" ng-click="isBright()">Enable Brightness</a>
+				<a class="button button-calm" ng-click="notBright()">Disable Brightness</a>
+			</div>
+		<p></p>
+			<div class="button-bar">
+				<a class="button button-balanced" ng-click="isNoise()">Enable Noise</a>
+				<a class="button button-balanced" ng-click="notNoise()">Disable Noise</a>
+			</div>
+		<p></p>
+			<div class="button-bar">
+				<a class="button button-assertive" ng-click="isPixelate()">Enable Pixelate</a>
+				<a class="button button-assertive" ng-click="notPixelate()">Disable Pixelate</a>
+			</div>
+			<!--<div class="item range range-positive">
+				<p>Brightness: {{brightnessValue}}</p>
+   				<input type="range" min="0" max="255" ng-model="brightnessValue"></div>-->
+	</ion-content>
+</ion-view>
