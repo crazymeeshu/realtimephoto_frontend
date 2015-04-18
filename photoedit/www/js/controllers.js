@@ -154,6 +154,12 @@ angular.module('starter.controllers', ['ionic'])
 			obj.applyFilters(canvas.renderAll.bind(canvas));
 		};
 		
+		$scope.disableAll = function (){
+			var obj = canvas.getActiveObject();
+			obj.filters = [];
+			obj.applyFilters(canvas.renderAll.bind(canvas));
+		};
+		
 		/*$scope.changeBright = function(){
 			console.log($scope.enableBrightness)
 			$scope.enableBrightness = !$scope.enableBrightness;

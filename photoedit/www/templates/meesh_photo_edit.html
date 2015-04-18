@@ -1,6 +1,11 @@
 <ion-view view-title="photo edit">
 	<ion-content>
 		<canvas id="c" style="border:1px solid black;" width="400" height="300"></canvas>
+		<p></p>
+			<div class="button-bar">
+				<a class="button button-assertive" ng-click="disableAll()">Disable All</a>
+			</div>
+		<p></p>
 			<div class="button-bar">
 				<a class="button button-dark" ng-click="isGray()">Enable Grayscale</a>
 				<a class="button button-dark" ng-click="notGray()">Disable Grayscale</a>
@@ -27,8 +32,8 @@
 			</div>
 		<p></p>
 			<div class="button-bar">
-				<a class="button button-assertive" ng-click="isPixelate()">Enable Pixelate</a>
-				<a class="button button-assertive" ng-click="notPixelate()">Disable Pixelate</a>
+				<a class="button button-royal" ng-click="isPixelate()">Enable Pixelate</a>
+				<a class="button button-royal" ng-click="notPixelate()">Disable Pixelate</a>
 			</div>
 			<!--<div class="item range range-positive">
 				<p>Brightness: {{brightnessValue}}</p>
